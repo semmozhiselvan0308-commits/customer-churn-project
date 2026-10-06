@@ -1,0 +1,62 @@
+[
+    {
+        "check_name": "Null rate check - monthly_charges",
+        "status": "PASS",
+        "value": 0.0,
+        "threshold": 0,
+        "severity": "CRITICAL"
+    },
+    {
+        "check_name": "Null rate check - tenure",
+        "status": "PASS",
+        "value": 0.0,
+        "threshold": 0,
+        "severity": "CRITICAL"
+    },
+    {
+        "check_name": "Value range check - tenure",
+        "status": "PASS",
+        "value": "min=0, max=72",
+        "threshold": "0 - 100",
+        "severity": "CRITICAL"
+    },
+    {
+        "check_name": "Value range check - monthly_charges",
+        "status": "PASS",
+        "value": "min=18.25, max=118.75",
+        "threshold": "> 0",
+        "severity": "CRITICAL"
+    },
+    {
+        "check_name": "Allowed values check - contract",
+        "status": "PASS",
+        "value": "invalid_rows=0",
+        "threshold": [
+            "One year",
+            "Month-to-month",
+            "Two year"
+        ],
+        "severity": "CRITICAL"
+    },
+    {
+        "check_name": "Row count check",
+        "status": "PASS",
+        "value": 7043,
+        "threshold": 7000,
+        "severity": "CRITICAL"
+    },
+    {
+        "check_name": "Duplicate check - customer_id",
+        "status": "PASS",
+        "value": "duplicate_rows=0",
+        "threshold": "0 duplicates",
+        "severity": "CRITICAL"
+    },
+    {
+        "check_name": "Churn distribution check",
+        "status": "PASS",
+        "value": 0.2654,
+        "threshold": "5% - 95%",
+        "severity": "WARNING"
+    }
+]
